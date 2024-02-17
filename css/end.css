@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+header {
+    background-color: #20B2FF;
+    color: #fff;
+    height: 11%;
+}
+
+header div {
+    display: inline;
+}
+
+.menu {
+    position: relative;
+    top: 2.1875em;
+}
+
+.menu__img {
+    padding-left: 2.4em;
+    position: relative;
+    top: -0.8em;
+}
+
+.menu img {
+    height: 3.7em;
+}
+
+.menu ul{
+    display: inline;
+    margin-left: 3.125em;
+}
+
+.menu li {
+    display: inline;
+    margin: 1em;
+}
+
+.menu ul a {
+    font-size: 1.5625em;
+    font-weight: 600;    
+}
+
+.tel {
+    float: right;
+    padding-top: 2.1875em;
+    padding-right: 2.5em;
+}
+
+.tel img {
+    width: 2.5em;
+    position: relative;
+    top: -0.4375em;
+    left: 0.4375em;
+}
+
+.tel a {
+    font-size: 1.5625em;
+    font-weight: 600;
+}
