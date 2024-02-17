@@ -7,6 +7,9 @@ header {
     background-color: #20B2FF;
     color: #fff;
     height: 6.25em;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 header div {
@@ -28,7 +31,7 @@ header div {
     height: 3.7em;
 }
 
-.menu ul{
+.menu ul {
     display: inline;
     margin-left: 3.125em;
 }
@@ -40,7 +43,7 @@ header div {
 
 .menu ul a {
     font-size: 1.5625em;
-    font-weight: 600;  
+    font-weight: 600;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -78,13 +81,17 @@ header div {
 
 .tel a:after {
     display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #fff; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.5s ease-out;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #fff;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.5s ease-out;
 }
 
 .tel a:hover {
@@ -101,20 +108,23 @@ header div {
     margin-right: auto;
 }
 
+.main {
+    overflow: hidden;
+}
+
 .main__description {
     display: inline-block;
-    margin-top: 190px;
+    margin-top: 15%;
     width: 50%;
 }
 
-.main__description h1{
-    font-size: 45px;
+.main__description h1 {
+    font-size: calc(1em + 2vw);
     font-weight: 600;
-    display: inline;
 }
 
 .main__description p {
-    font-size: 25px;
+    font-size: calc(1em + 0.5vw);
     font-weight: 400;
     color: #00000088;
     line-height: 30px;
@@ -126,5 +136,201 @@ header div {
 .main img {
     width: 40%;
     float: right;
-    margin-top: 60px;
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+.service {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.foo {
+    position: relative;
+    top: -120px;
+}
+
+.service img {
+    width: 33%;
+    margin-top: 30px;
+}
+
+.servis__block {
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+
+.servis__block h2 {
+    font-size: calc(1em + 1.5vw);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.item1 img {
+    height: 60px;
+    width: 40px;
+    margin-top: 17px;
+    position: relative;
+    left: -60px;
+}
+
+.item1 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+}
+
+.item2 img {
+    height: 60px;
+    width: 40px;
+    margin-top: 17px;
+    position: relative;
+    left: -60px;
+}
+
+.item2 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+}
+
+.item3 img {
+    height: 60px;
+    width: 40px;
+    margin-top: 17px;
+    position: relative;
+    left: -60px;
+}
+
+.item3 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+}
+
+.item4 img {
+    width: 40px;
+    position: relative;
+    left: -60px;
+    top: -25px;
+}
+
+.item4 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+}
+
+.servis__block h3 {
+    font-size: calc(1em + 0.5vw);
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.servis__block p {
+    font-size: calc(1em + 0.1vw);
+    line-height: 22px;
+    color: #00000088;
+}
+
+
+
+
+
+
+.car {
+    overflow: hidden;
+}
+
+.car__header h2 {
+    font-size: calc(1em + 1.5vw);
+    line-height: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    left: -365px;
+}
+
+.car__header p {
+    font-weight: 300;
+    color: #00000088;
+    text-decoration: underline;
+    text-decoration-color: #00000088;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: relative;
+    left: -365px;
+}
+
+.car img {
+    float: right;
+    width: 40%;
+    position: relative;
+    top: -130px;
+}
+
+.car__options {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+}
+
+.car__options p {
+    margin-bottom: 15px;
+}
+
+.car__description {
+    font-size: 1.25em;
+    width: 45%;
+    line-height: 25px;
+}
+
+
+
+
+
+
+footer {
+    background-color: #20B2FF;
+    height: 120px;
+}
+
+.links {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.links__number {
+    color: #fff;
+    font-size: 1.375em;
+}
+
+.links__sms {
+    margin-top: 15px;
+}
+
+.links__sms a {
+    margin-right: 10px;
+}
+
+.links__sms img {
+    width: 30px;
+}
+
+.inf__text {
+    color: #fff;
+    float: right;
+    font-size: 1.375em;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 60px;
 }
