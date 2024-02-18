@@ -203,7 +203,6 @@ header div {
     width: 40px;
     position: relative;
     left: -60px;
-    top: -25px;
 }
 
 .item4 h3 {
@@ -236,8 +235,7 @@ header div {
 
 
 .car__header {
-    position: relative;
-    left: -365px;
+    margin-right: 60%;
 }
 
 .car__header h2 {
@@ -430,6 +428,7 @@ footer {
     .item4 img {
         width: 25px;
         height: 45px;
+        top: -25px;
     }
 
     .item4 p {
@@ -487,4 +486,58 @@ footer {
         font-size: 21px;
         
     }
+}
+
+@media (max-width:992px) {
+    .menu ul {
+        display: none;
+    }
+
+
+
+    .servis__block {
+        width: 45%;
+    }
+
+
+
+
+    .car {
+        text-align: center;
+    }
+
+    .car__header {
+        margin-right: 0px;
+    }
+
+    .car__header p {
+        margin-bottom: 150px;
+    }
+
+    .car img {
+        float: none;
+        width: 60%;
+    }
+
+    .car__options {
+        margin-top: 0px;
+    }
+
+    .car__description {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:768px) {
+    header {
+        background-color: #111;
+    }
+
+
+
+
 }
