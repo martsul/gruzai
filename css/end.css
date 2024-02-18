@@ -79,20 +79,6 @@ header div {
 
 }
 
-.tel a:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    /*изменить на right:0;, чтобы изменить направление подчёркивания */
-    width: 0;
-    /*задаём длинну линии до наведения курсора*/
-    height: 2px;
-    /*задаём ширину линии*/
-    background-color: #fff;
-    /*задаём цвет линии*/
-    content: "";
-    transition: width 0.5s ease-out;
-}
 
 .tel a:hover {
     background-size: 100% 2px;
@@ -115,7 +101,7 @@ header div {
 .main__description {
     display: inline-block;
     margin-top: 15%;
-    width: 50%;
+    width: 55%;
 }
 
 .main__description h1 {
@@ -137,7 +123,6 @@ header div {
     width: 40%;
     float: right;
     margin-top: 150px;
-    margin-bottom: 0;
 }
 
 
@@ -155,13 +140,13 @@ header div {
     top: -120px;
 }
 
-.service img {
+.service__img {
     width: 33%;
     margin-top: 30px;
 }
 
 .servis__block {
-    display: inline-block;
+    display: block;
     width: 40%;
     float: right;
 }
@@ -249,13 +234,17 @@ header div {
     overflow: hidden;
 }
 
+
+.car__header {
+    position: relative;
+    left: -365px;
+}
+
 .car__header h2 {
     font-size: calc(1em + 1.5vw);
     line-height: 80px;
     margin-bottom: 15px;
     text-align: center;
-    position: relative;
-    left: -365px;
 }
 
 .car__header p {
@@ -267,15 +256,13 @@ header div {
     text-underline-offset: 20px;
     margin-bottom: 80px;
     text-align: center;
-    position: relative;
-    left: -365px;
 }
 
 .car img {
     float: right;
     width: 40%;
     position: relative;
-    top: -130px;
+    top: -160px;
 }
 
 .car__options {
@@ -312,6 +299,15 @@ footer {
 .links__number {
     color: #fff;
     font-size: 1.375em;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+
+.links__number:hover {
+    background-size: 100% 2px;
 }
 
 .links__sms {
@@ -331,6 +327,164 @@ footer {
     float: right;
     font-size: 1.375em;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-right: 60px;
+    line-height: 30px;
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    .menu__img img {
+        height: 50px;
+    }
+
+    .menu ul {
+        margin-left: 20px;
+    }
+
+    .menu__item a{
+        font-size: 15px;
+    }
+
+    .tel {
+        padding-top: 37px;
+    }
+
+    .tel img {
+        top: -8px;
+    }
+
+    .tel a {
+        font-size: 21px;
+    }
+
+
+
+    .main__description h1 {
+        font-size: 30px;
+        margin-top: 45px;
+    }
+
+    .main__description p {
+        font-size: 17px;
+        margin-top: 60px;
+        line-height: 25px;
+    }
+
+    .main img {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+
+
+
+    .service__img {
+        height: 450px;
+    }
+
+    .servis__block h2{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .servis__block h3 {
+        font-size: 17px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .servis__block p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        position: relative;
+        left: -20px;
+        line-height: 17px;
+    }
+
+    .servis__block img {
+        width: 25px;
+        height: 35px;
+        left: -55px;
+    }
+
+    .item1 img {
+        margin-top: 0px;
+        top: -17px;
+    }
+    
+    .item2 img {
+        margin-top: 0px;
+        top: -17px;
+    }
+    
+    .item3 img {
+        margin-top: 0px;
+        top: -17px;
+    }
+        
+    .item4 img {
+        width: 25px;
+        height: 45px;
+    }
+
+    .item4 p {
+        margin-top: -10px;
+    }
+
+
+
+
+
+
+
+
+    .car__header {
+        left: -220px;
+    }
+
+    .car__header h2 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .car__header p {
+        font-size: 14px;
+    }
+
+    .car img {
+        top: -70px;
+    }
+
+    .car__options p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .car__description p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+
+
+    .links__number {
+        font-size: 21px;
+    }    
+
+    .links__sms img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .inf__text {
+        font-size: 21px;
+        
+    }
 }
