@@ -6,7 +6,7 @@ html {
 header {
     background-color: #20B2FF;
     color: #fff;
-    height: 6.25em;
+    height: 100px;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -18,27 +18,27 @@ header div {
 
 .menu {
     position: relative;
-    top: 2.1875em;
+    top: 35px;
 }
 
 .menu__img {
-    padding-left: 2.4em;
+    padding-left: 39px;
     position: relative;
-    top: -0.8em;
+    top: -13px;
 }
 
 .menu img {
-    height: 3.7em;
+    height: 60px;
 }
 
 .menu ul {
     display: inline;
-    margin-left: 3.125em;
+    margin-left: 50px;
 }
 
 .menu li {
     display: inline;
-    margin: 1em;
+    margin: 16px;
 }
 
 .menu ul a {
@@ -57,15 +57,15 @@ header div {
 
 .tel {
     float: right;
-    padding-top: 2.1875em;
-    padding-right: 2.5em;
+    padding-top: 35px;
+    padding-right: 40px;
 }
 
 .tel img {
-    width: 2.5em;
+    width: 40px;
     position: relative;
-    top: -0.4375em;
-    left: 0.4375em;
+    top: -7px;
+    left: 7px;
 }
 
 .tel a {
@@ -105,18 +105,22 @@ header div {
 }
 
 .main__description h1 {
-    font-size: calc(1em + 2vw);
+    font-size: 2.5em;
     font-weight: 600;
 }
 
 .main__description p {
-    font-size: calc(1em + 0.5vw);
+    font-size: 1.375em;
     font-weight: 400;
     color: #00000088;
     line-height: 30px;
     word-spacing: 5px;
     letter-spacing: 2px;
     margin-top: 150px;
+}
+
+.main__description span {
+    white-space: nowrap;
 }
 
 .main img {
@@ -152,7 +156,7 @@ header div {
 }
 
 .servis__block h2 {
-    font-size: calc(1em + 1.5vw);
+    font-size: 2.1875em;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -212,14 +216,14 @@ header div {
 }
 
 .servis__block h3 {
-    font-size: calc(1em + 0.5vw);
+    font-size: 1.375em;
     font-weight: 100;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .servis__block p {
-    font-size: calc(1em + 0.1vw);
+    font-size: 1.0625em;
     line-height: 22px;
     color: #00000088;
 }
@@ -239,7 +243,7 @@ header div {
 }
 
 .car__header h2 {
-    font-size: calc(1em + 1.5vw);
+    font-size: 2.1875em;
     line-height: 80px;
     margin-bottom: 15px;
     text-align: center;
@@ -344,7 +348,7 @@ footer {
     }
 
     .menu__item a{
-        font-size: 15px;
+        font-size: 0.9375em;
     }
 
     .tel {
@@ -356,18 +360,18 @@ footer {
     }
 
     .tel a {
-        font-size: 21px;
+        font-size: 1.3125em;
     }
 
 
 
     .main__description h1 {
-        font-size: 30px;
+        font-size: 1.875em;
         margin-top: 45px;
     }
 
     .main__description p {
-        font-size: 17px;
+        font-size: 1.0625em;
         margin-top: 60px;
         line-height: 25px;
     }
@@ -385,18 +389,18 @@ footer {
     }
 
     .servis__block h2{
-        font-size: 25px;
+        font-size: 1.5625em;
         margin-bottom: 30px;
     }
 
     .servis__block h3 {
-        font-size: 17px;
+        font-size: 1.0625em;
         margin-top: 0px;
         margin-bottom: 0px;
     }
 
     .servis__block p {
-        font-size: 12px;
+        font-size: 0.75em;
         margin-bottom: 20px;
         margin-top: 0px;
         position: relative;
@@ -447,12 +451,12 @@ footer {
     }
 
     .car__header h2 {
-        font-size: 25px;
+        font-size: 1.5625em;
         line-height: 50px;
     }
 
     .car__header p {
-        font-size: 14px;
+        font-size: 0.875em;
     }
 
     .car img {
@@ -460,12 +464,12 @@ footer {
     }
 
     .car__options p {
-        font-size: 14px;
+        font-size: 0.875em;
         margin-bottom: 15px;
     }
 
     .car__description p {
-        font-size: 14px;
+        font-size: 0.875em;
         line-height: 20px;
     }
 
@@ -474,7 +478,7 @@ footer {
 
 
     .links__number {
-        font-size: 21px;
+        font-size: 1.3125em;
     }    
 
     .links__sms img {
@@ -483,7 +487,7 @@ footer {
     }
 
     .inf__text {
-        font-size: 21px;
+        font-size: 1.3125em;
         
     }
 }
@@ -533,11 +537,117 @@ footer {
 }
 
 @media (max-width:768px) {
-    header {
-        background-color: #111;
+    .menu {
+        top: 40px;
+    }
+    
+    .menu__img {
+        padding-left: 20px;
+    }
+
+    .menu__img img {
+        height: 40px;
+    }
+    
+    .tel {
+        padding-right: 20px;
+        padding-top: 39px;
+    }
+
+    .tel img {
+        display: none;
+    }
+
+    .tel a {
+        font-size: 1em;
     }
 
 
 
 
+
+    .main__description {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .main__description h1{
+        font-size: 1.4375em;
+        line-height: 30px;
+    }
+
+    .main__description p{
+        font-size: 0.9375em;
+        line-height: 23px;
+    }
+
+    .main img {
+        display: none;
+    }
+
+
+
+
+
+    .service__img {
+        display: none;
+    }
+
+    .servis__block {
+        width: 100%;
+    }
+
+ 
+
+    .servis__block img {
+        left: 0px;
+        margin-top: 0px;
+    }
+
+    .servis__block h3 {
+        left: 0px;
+        font-size: 0.9375em;
+        font-weight: 600;
+    }
+
+    .servis__block p {
+        position: unset;
+        font-size: 0.875em;
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+    .car__description {
+        width: 100%;
+    }
+    
+    .car__options {
+        font-size: 1em;
+    }
+    
+    .car__description {
+        font-size: 1em;
+    }
+
+
+
+    .links {
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+    .links a{
+        font-size: 0.875em;
+        font-weight: 600;
+    }
+
+    .inf__text {
+        margin-right: 15px;
+        margin-top: 18px;
+        font-size: 1em;
+        line-height: 40px;
+    }
 }
