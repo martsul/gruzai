@@ -11,53 +11,49 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <nav class="navbar">
-                <div class="navbar__img">
-                    <a href="#top"><img src="img/iconwhite.png" alt=""></a>
-                </div>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="#top" class="menu__img"><img src="img/iconwhite.png" alt=""></a>
+                <ul>
+                    <li class="menu__item"><a href="#top">Главная</a></li>
+                    <li class="menu__item"><a href="#service">Наши услуги</a></li>
+                    <li class="menu__item"><a href="#inf">Контакты</a></li>
+                </ul>
+            </div>
 
-                <div class="navbar__tel">
-                    <img src="img/tel.png" alt="">
-                    <a href="tel:+375297886729">+375 (29) 788-67-29</a>
-                </div>
+            <div class="tel">
+                <img src="img/tel.png" alt="">
+                <a href="tel:+375297886729">+375 (29) 788-67-29</a>
+            </div>
+        </nav>
+    </header>
 
-                <div class="navbar__list">
-                    <ul class="list">
-                        <li class="list__item"><a href="#top">Главная</a></li>
-                        <li class="list__item"><a href="#service">Наши услуги</a></li>
-                        <li class="list__item"><a href="#inf">Контакты</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="main" id="main">
-                <div class="main__header">
-                    <h1>Грузоперевозки Гродно</h1>
-                </div>
+    <main>
+        <div class="container">
+            <div class="main" >
                 <div class="main__description">
-                    <p>Мы успешно занимаемся грузоперевозками более 10 лет.</p>
-                    <p>Работаем с физическими и с юридическими лицами.
+                    <h1>Грузоперевозки Гродно</h1>
+
+                    <p>Мы успешно занимаемся грузоперевозками более <span>10 лет.</span><br>
+                        Работаем с физическими и с юридическими лицами.
                         Доставляем грузы как по городу Гродно, так и по Гродненской области.
                         Мы ценим пунктуальность и аккуратность, и предоставляем нашим клиентам качественный сервис по
                         приемлемым ценам.</p>
-                </div>
-                <div class="main__city">
-                    <img src="img/city.png" alt="">
-                </div>
-            </div>
 
-            <div class="service" id="service">
-                <div class="service__img">
-                    <img src="img/road.png" alt="">
                 </div>
+                <img src="img/city.png" alt="">
+                
+            </div>
+            <div class="service">
+                <div class="foo" id="service"></div>
+                <img src="img/road.png" alt="" class="service__img">
 
                 <div class="servis__block">
                     <h2>Наши услуги</h2>
                     <ul class="servis__list">
-                        <li class="service__item sistem1">
+                        <li class="item1">
+                            <img src="img/infIMG140.png" alt="">
                             <h3>Квартирные переезды</h3>
                             <p>
                                 Организуем переезд квартиры на новое место.
@@ -65,14 +61,16 @@
                                 Предоставляем услуги профессиональных грузчиков
                             </p>
                         </li>
-                        <li class="service__item sistem2">
+                        <li class="item2">
+                            <img src="img/infIMG240.png" alt="">
                             <h3>Офисные переезды</h3>
                             <p>
                                 Поможем офису быстро переехать на новое место.
                                 Погрузка, перевозка, разгрузка, распаковка, расстановка
                             </p>
                         </li>
-                        <li class="service__item sistem3">
+                        <li class="item3">
+                            <img src="img/infIMG340.png" alt="">
                             <h3>Доставка попутных грузов</h3>
                             <p>
                                 Доставим ваши грузы вовремя в нужное место.
@@ -80,7 +78,8 @@
                                 небольших организаций
                             </p>
                         </li>
-                        <li class="service__item sistem4">
+                        <li class="item4">
+                            <img src="img/coin40.png" alt="">
                             <h3>Стоимость перевозки от 30 Br</h3>
                             <p>
                                 Стоимость каждой перевозки расчитывается индивидуально.
@@ -92,60 +91,56 @@
             </div>
 
             <div class="car">
-                <div class="car__text text">
-                    <div class="text__h2">
+                    <div class="car__header">
                         <h2>
                             Наше авто
-                        </h2>
-                        <h2>
+                            <br>
                             Фургон Mitsubishi Canter
                         </h2>
-                        <p>19 м3</p>
+                        <p>19 м<sup>3</sup></p>
                     </div>
-                    <div class="text__options">
+
+                    <img src="img/car.png" alt="">
+
+                    <div class="car__options">
                         <p>Длина — 4,2 метра</p>
                         <p>Ширина — 2,15 метра</p>
                         <p>Высота — 2 метра</p>
                         <p>Грузоподъемность — до 2,5 тонн</p>
                     </div>
 
-                    <div class="text__description">
+                    <div class="car__description">
                         <p>
                             Подходит для перевозок крупногабаритных вещей. Закрытый кузов позволяет перевозить бытовую
                             технику, мебель, хрупкие предметы.
                         </p>
                     </div>
-                </div>
-                <img src="img/car.png" alt="">
             </div>
-        </main>
-        <footer>
-            <div>
-                <div class="inf" id="inf">
-                    <div class="links">
-                        <div class="links__number">
-                            <a href="tel:+375297886729">+375 (29) 788-67-29</a>
-                        </div>
-                        <div class="links__sms">
-                            <a href="#">
-                                <img src="img/whatsapp.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/telegram.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/viber.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="inf__text">
-                        <p>ИП Марцуль А.Л.</p>
-                        <p>УНП: 590564905</p>
+        </div>
+    </main>
+
+    <footer>
+            <div class="inf" id="inf">
+                <div class="links">
+                        <a href="tel:+375297886729" class="links__number">+375 (29) 788-67-29</a>
+                    <div class="links__sms">
+                        <a href="https://wa.me/375297886729" target="_blank">
+                            <img src="img/whatsapp.png" alt="">
+                        </a>
+                        <a href="https://t.me/gruzai" target="_blank">
+                            <img src="img/telegram.png" alt="">
+                        </a>
+                        <a href="https://msng.link/o?375297886729=vi" target="_blank">
+                            <img src="img/viber.png" alt="">
+                        </a>
                     </div>
                 </div>
+                <div class="inf__text">
+                    <p>ИП Марцуль А.Л.</p>
+                    <p>УНП: 590564905</p>
+                </div>
             </div>
-        </footer>
-    </div>
+    </footer>
 </body>
 
 </html>

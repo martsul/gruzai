@@ -1,323 +1,656 @@
 html {
-  scroll-behavior: smooth;
-  font-family: Trebuchet MS, sans-serif;
+    scroll-behavior: smooth;
+    font-family: Trebuchet MS, sans-serif;
 }
-
-h2 {
-  font-size: 45px;
-}
-
 
 header {
-  background: #20B2FF; 
-  position: sticky;
-  top: 0;
-  z-index: 2; 
+    background-color: #20B2FF;
+    color: #fff;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
-header .navbar div {
-  display: inline;
-  color: #fff;
-  font-weight: 600;
-  font-size: 25px;
+header div {
+    display: inline;
 }
 
-header .navbar__img img {
-  height: 60px;
-  margin: 20px;
-  margin-left: 40px;
+.menu {
+    position: relative;
+    top: 35px;
 }
 
-header .navbar__tel {
-  position: absolute;
-  top: 35px;
-  right: 45px;
-  
+.menu__img {
+    padding-left: 39px;
+    position: relative;
+    top: -13px;
 }
 
-header .navbar__tel img {
-  position: absolute;
-  width: 40px;
-  top: -7px;
-  right: 240px;
+.menu img {
+    height: 60px;
 }
 
-header .list {
-  display: inline;
-  position: absolute;
-  top: 35px;
-  left: 190px;
+.menu ul {
+    display: inline;
+    margin-left: 50px;
 }
 
-header .list__item {
-  display: inline;
-  margin: 15px;
+.menu li {
+    display: inline;
+    margin: 16px;
 }
 
-.navbar a {
-	position: relative;
-	color: #fff; /*задаём цвет ссылки*/
-	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; /*убираем подчёркивание*/
-
-}
-.navbar a:after {
-	display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #fff; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+.menu ul a {
+    font-size: 1.5625em;
+    font-weight: 600;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
 }
 
-.navbar a:hover:after,
-.navbar a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+.menu ul a:hover {
+    background-size: 100% 2px;
+}
+
+.tel {
+    float: right;
+    padding-top: 35px;
+    padding-right: 40px;
+}
+
+.tel img {
+    width: 40px;
+    position: relative;
+    top: -7px;
+    left: 7px;
+}
+
+.tel a {
+    font-size: 1.5625em;
+    font-weight: 600;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+
+}
+
+
+.tel a:hover {
+    background-size: 100% 2px;
 }
 
 
 
+
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .main {
-  position: relative;
-  top: 50px;
-  height: 700px;
+    overflow: hidden;
 }
 
-main .main__header { 
-  font-weight: 600;
-  font-size: 45px;
-  position: relative;
-  top: 140px;
-  left: 100px;
-  width: 600px;
+.main__description {
+    display: inline-block;
+    margin-top: 15%;
+    width: 55%;
 }
 
-main .main__description {
-  color: #00000088;
-  width: 900px;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  word-spacing: 5px;
-  letter-spacing: 2px;
-  position: relative;
-  top: 290px;
-  left: 100px;
+.main__description h1 {
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
-.main__city {
-  position: absolute;
-  right:  110px;
-  top: 10px; 
+.main__description p {
+    font-size: 1.375em;
+    font-weight: 400;
+    color: #00000088;
+    line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 150px;
 }
 
-.main__city img {
-  height: 700px;
+.main__description span {
+    white-space: nowrap;
 }
+
+.main img {
+    width: 40%;
+    float: right;
+    margin-top: 150px;
+}
+
 
 
 
 
 .service {
-  height: 1000px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    overflow: hidden;
 }
 
-.service div {
-  display: table-cell;
+.foo {
+    position: relative;
+    top: -120px;
 }
 
-.service__img img {
-  position: relative;
-  left: 120px;
-  top: 140px;
-  width: 500px;
-  height: 710px;
+.service__img {
+    width: 33%;
+    margin-top: 30px;
+}
+
+.servis__block {
+    display: block;
+    width: 40%;
+    float: right;
 }
 
 .servis__block h2 {
-  position: relative;
-  top: 160px;
-  right: -700px;
-  margin-bottom: 30px;
+    font-size: 2.1875em;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.servis__block ul {
-  position: relative;
-  top: 170px;
-  left: 400px;
+.item1 img {
+    height: 60px;
+    width: 40px;
+    margin-top: 17px;
+    position: relative;
+    left: -60px;
 }
 
-.service__item {
-  position: relative;
-  left: 175px;
-  margin-bottom: 20px;
-  padding-left: 50px;
-  padding-top: 30px;
+.item1 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
 }
 
-.sistem1 {
-  background: url(/img/infIMG140.png) no-repeat;
-  padding-top: 35px;
+.item2 img {
+    height: 60px;
+    width: 40px;
+    margin-top: 17px;
+    position: relative;
+    left: -60px;
 }
 
-.sistem2 {
-  background: url(/img/infIMG240.png) no-repeat;
-
+.item2 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
 }
 
-.sistem3 {
-  background: url(/img/infIMG340.png) no-repeat;
-  margin-bottom: 0px;
-
-}
-.sistem4 {
-  background: url(/img/coin40.png) no-repeat;
-  padding-top: 50px;
+.item3 img {
+    height: 60px;
+    width: 40px;
+    margin-top: 17px;
+    position: relative;
+    left: -60px;
 }
 
-.service__item h3 {
-  font-weight: 100;
-  font-size: 25px;
-  margin-bottom: 20px;
+.item3 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
 }
 
-.service__item p {
-  width: 600px;
-  line-height: 22px;
-  font-size: 17px;
-  color: #00000088;
+.item4 img {
+    width: 40px;
+    position: relative;
+    left: -60px;
 }
+
+.item4 h3 {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+}
+
+.servis__block h3 {
+    font-size: 1.375em;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.servis__block p {
+    font-size: 1.0625em;
+    line-height: 22px;
+    color: #00000088;
+}
+
+
 
 
 
 
 .car {
-  display: table;
-  position: relative;
+    overflow: hidden;
 }
 
-.car__text {
-  display: table-cell;
+
+.car__header {
+    margin-right: 60%;
 }
 
-.text__h2  {
-  text-align: center;
-  width: 720px;
+.car__header h2 {
+    font-size: 2.1875em;
+    line-height: 80px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.text__h2 h2 {
-  margin: 40px;
-}
-
-.text__h2 p {
-  color: #00000088;
-  font-weight: 300;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #00000088;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 20px;
-  margin-bottom: 80px;
-}
-
-.text__options {
-  font-size: 20px;
-  position: relative;
-  left: 105px;
-  margin-bottom: 40px;
-}
-
-.text__options p {
-  margin-bottom: 15px;
-}
-
-.text__description {
-  font-size: 20px;
-  width: 700px;
-  position: relative;
-  left: 105px;
-  line-height: 30px;
+.car__header p {
+    font-weight: 300;
+    color: #00000088;
+    text-decoration: underline;
+    text-decoration-color: #00000088;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 20px;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
 .car img {
-  position: relative;
-  left: 400px;
-  top: 100px;
-  width: 600px;
+    float: right;
+    width: 40%;
+    position: relative;
+    top: -160px;
 }
+
+.car__options {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+}
+
+.car__options p {
+    margin-bottom: 15px;
+}
+
+.car__description {
+    font-size: 1.25em;
+    width: 45%;
+    line-height: 25px;
+}
+
+
 
 
 
 
 footer {
-  background-color: #20B2FF;
-  position: relative;
-  top: 150px;
-  font-family: "TT Norms Pro", Arial, sans-serifserif;
-}
-
-.inf {
-  padding: 30px;
+    background-color: #20B2FF;
+    height: 120px;
 }
 
 .links {
-  display: table-cell;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 60px;
 }
 
 .links__number {
-  font-size: 22px;
+    color: #fff;
+    font-size: 1.375em;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
 }
 
-.links__number a {
-	position: relative;
-	color: #fff; /*задаём цвет ссылки*/
-	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; 
-  display: table;
-  margin: 15px;/*убираем подчёркивание*/
+.links__number:hover {
+    background-size: 100% 2px;
 }
 
-.links__number a:after {
-	display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #fff; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+.links__sms {
+    margin-top: 15px;
 }
-
-.links__number a:hover:after,
-.links__number a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-
 
 .links__sms a {
-  position: relative;
-  left: 15px;
+    margin-right: 10px;
 }
 
 .links__sms img {
-  height: 30px;
-  margin-right: 10px;
+    width: 30px;
 }
 
 .inf__text {
-  display: table-cell;
-  position: relative;
-  left: 1400px;
+    color: #fff;
+    float: right;
+    font-size: 1.375em;
+    text-align: center;
+    margin-top: 35px;
+    margin-right: 60px;
+    line-height: 30px;
 }
 
-.inf__text p {
-  color: #fff;
-  font-size: 22px;
-  text-align: center;
-  margin: 15px;
+
+
+
+
+@media (max-width:1200px) {
+    .menu__img img {
+        height: 50px;
+    }
+
+    .menu ul {
+        margin-left: 20px;
+    }
+
+    .menu__item a{
+        font-size: 0.9375em;
+    }
+
+    .tel {
+        padding-top: 37px;
+    }
+
+    .tel img {
+        top: -8px;
+    }
+
+    .tel a {
+        font-size: 1.3125em;
+    }
+
+
+
+    .main__description h1 {
+        font-size: 1.875em;
+        margin-top: 45px;
+    }
+
+    .main__description p {
+        font-size: 1.0625em;
+        margin-top: 60px;
+        line-height: 25px;
+    }
+
+    .main img {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+
+
+
+    .service__img {
+        height: 450px;
+    }
+
+    .servis__block h2{
+        font-size: 1.5625em;
+        margin-bottom: 30px;
+    }
+
+    .servis__block h3 {
+        font-size: 1.0625em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .servis__block p {
+        font-size: 0.75em;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        position: relative;
+        left: -20px;
+        line-height: 17px;
+    }
+
+    .servis__block img {
+        width: 25px;
+        height: 35px;
+        left: -55px;
+    }
+
+    .item1 img {
+        margin-top: 0px;
+        top: -17px;
+    }
+    
+    .item2 img {
+        margin-top: 0px;
+        top: -17px;
+    }
+    
+    .item3 img {
+        margin-top: 0px;
+        top: -17px;
+    }
+        
+    .item4 img {
+        width: 25px;
+        height: 45px;
+        top: -25px;
+    }
+
+    .item4 p {
+        margin-top: -10px;
+    }
+
+
+
+
+
+
+
+
+    .car__header {
+        left: -220px;
+    }
+
+    .car__header h2 {
+        font-size: 1.5625em;
+        line-height: 50px;
+    }
+
+    .car__header p {
+        font-size: 0.875em;
+    }
+
+    .car img {
+        top: -70px;
+    }
+
+    .car__options p {
+        font-size: 0.875em;
+        margin-bottom: 15px;
+    }
+
+    .car__description p {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+
+
+
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .links__number {
+        font-size: 1.3125em;
+    }    
+
+    .links__sms img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .inf__text {
+        font-size: 1.3125em;
+        
+    }
+}
+
+@media (max-width:992px) {
+    .menu ul {
+        display: none;
+    }
+
+
+
+    .servis__block {
+        width: 45%;
+    }
+
+
+
+
+    .car {
+        text-align: center;
+    }
+
+    .car__header {
+        margin-right: 0px;
+    }
+
+    .car__header p {
+        margin-bottom: 150px;
+    }
+
+    .car img {
+        float: none;
+        width: 60%;
+    }
+
+    .car__options {
+        margin-top: 0px;
+    }
+
+    .car__description {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .menu {
+        top: 40px;
+    }
+    
+    .menu__img {
+        padding-left: 20px;
+    }
+
+    .menu__img img {
+        height: 40px;
+    }
+    
+    .tel {
+        padding-right: 20px;
+        padding-top: 39px;
+    }
+
+    .tel img {
+        display: none;
+    }
+
+    .tel a {
+        font-size: 1em;
+    }
+
+
+
+
+
+    .main__description {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .main__description h1{
+        font-size: 1.4375em;
+        line-height: 30px;
+    }
+
+    .main__description p{
+        font-size: 0.9375em;
+        line-height: 23px;
+    }
+
+    .main img {
+        display: none;
+    }
+
+
+
+
+
+    .service__img {
+        display: none;
+    }
+
+    .servis__block {
+        width: 100%;
+    }
+
+ 
+
+    .servis__block img {
+        left: 0px;
+        margin-top: 0px;
+    }
+
+    .servis__block h3 {
+        left: 0px;
+        font-size: 0.9375em;
+        font-weight: 600;
+    }
+
+    .servis__block p {
+        position: unset;
+        font-size: 0.875em;
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+    .car__description {
+        width: 100%;
+    }
+    
+    .car__options {
+        font-size: 1em;
+    }
+    
+    .car__description {
+        font-size: 1em;
+    }
+
+
+
+    .links {
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+    .links a{
+        font-size: 0.875em;
+        font-weight: 600;
+    }
+
+    .inf__text {
+        margin-right: 15px;
+        margin-top: 18px;
+        font-size: 1em;
+        line-height: 40px;
+    }
 }
